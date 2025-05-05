@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;  
-  border: 1px solid red;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
     color:#ffffff;
     display:flex;
     flex-direction: column;
-    max-width:1280px;
+    max-width:1080px;
     padding:24px;
 }
 
@@ -36,36 +35,77 @@ ul {
     display:flex;
     margin:0;
     padding:0;
+    list-style-type: none;
+    display:flex;
+    align-items:center;
+    gap:24px;
 }
 
-ul li {
+.header-wrap a {
     text-decoration: none;
+    color: white;
+    font-size:16px;
+    color: #e5e7eb;
 }
 
 .logo {
     align-self: center;
     font-weight: bold;
+    font-size:24px;
 }
 
 .hero {
     display:flex;
     gap:24px;
+    padding: 40px 0;
+    justify-content: center;
+    align-items:center;
+}
+
+.hero h1 {
+    font-size:48px;
+    font-weight: 900;
+    line-height:1;
+}
+
+.hero-text {
+    align-content: center;
+}
+
+.hero p {
+    font-size:16px;
+    color: #e5e7eb;
+}
+
+.hero button {
+    background-color: #3882f6;
+    padding:8px 32px;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    font-family: "Roboto", sans-serif;
+    border-radius:8px;
+    border:0;
 }
 
 .information {
-    max-width: 992px;
-    padding:24px;
+    max-width: 820px;
+    padding: 40px 24px;
     display:flex;            
     flex-direction: column;
     text-align:center;
 }
 
 .information h2 {
-    margin:0;
+    margin:0 0 16px 0;
+    font-size:32px;
+    color:#1f2937;
+    font-weight:900;
 }
 
 .image-section {
     display:flex;    
+    gap:12px;
 }
 
 .image-box {
@@ -85,20 +125,57 @@ ul li {
 }
 
 .quote p {
-    max-width:992px;
+    max-width:820px;
+    font-size:32px;
+    font-style:italic;
+    color:#1f2937;
+    font-weight:300;
 }
 
-footer {
-    padding:24px;
+.quote p strong {
+    font-weight:700;
+    font-style:normal;
+    font-size:24px;
+} 
+
+.cta {
+    padding: 40px 24px;
     width:100%;    
     display:flex;
     justify-content: center;
 }
 
-.cta {
+.cta h3 {
+    font-size:24px;
+}
+
+.cta-box {
     width:100%;
     background-color: #3b82f6;
     padding:32px 96px;
     color:#ffffff;
-    max-width:1280px;
+    max-width:820px;
+    border-radius:16px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta button {
+    background-color: #3882f6;
+    padding:8px 32px;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    font-family: "Roboto", sans-serif;
+    border-radius:8px;
+    border:2px solid white;
+}
+
+footer {
+    padding: 40px 24px;
+    background-color: #1f2937;
+    width:100%;
+    text-align:center;
+    color: #e5e7eb;
 }

@@ -168,6 +168,7 @@ ul {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    gap:16px;
 }
 
 .cta button {
@@ -179,6 +180,7 @@ ul {
     font-family: "Roboto", sans-serif;
     border-radius:8px;
     border:2px solid white;
+    flex-shrink: 0;
 }
 
 footer {
